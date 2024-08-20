@@ -1,0 +1,40 @@
+.main{
+    position: relative;
+}
+.input{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 8px 20px;
+    font-size: 16px;
+    width: 400px;
+    border-radius: 12px;
+    padding-left: 35px;
+    &:focus{
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+    @media(max-width: 800px){
+        width: 250px
+    }
+    @media(max-width: 550px){
+        width: 180px
+    }
+}
+.svg{
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+.svgClose{
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+}
